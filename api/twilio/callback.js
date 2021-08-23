@@ -10,6 +10,7 @@ module.exports = (req, res) => {
 
   const twiml = new MessagingResponse()
   twiml.message(`${isDeveloperWaId ? '🚀' : '👋'} You said: "${body.Body}"? 🤔`)
+  twiml.say(`Thanks for your message!`)
 
   res.setHeader('Content-Type', 'text/xml')
   return res.send(twiml.toString(),)
