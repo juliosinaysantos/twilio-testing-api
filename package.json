@@ -3,7 +3,7 @@
   "description": "Testing Twilio API and Twilio Webhooks",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port $PORT",
     "build": "vite build",
     "serve": "vite preview"
   },
